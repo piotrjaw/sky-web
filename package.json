@@ -1,0 +1,33 @@
+{
+  "name": "sky-web",
+  "version": "1.0.0",
+  "description": "Please run:",
+  "bin": {
+    "sky": "cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piotrjaw/sky-web.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/piotrjaw/sky-web/issues"
+  },
+  "homepage": "https://github.com/piotrjaw/sky-web#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0",
+    "http": "0.0.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-jasmine": "^1.0.2",
+    "karma-nyan-reporter": "^0.2.4",
+    "lodash": "^4.12.0",
+    "phantomjs": "^2.1.7",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {
+    "karma-phantomjs-launcher": "^1.0.0"
+  }
+}

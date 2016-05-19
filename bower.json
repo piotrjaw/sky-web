@@ -1,0 +1,29 @@
+{
+  "name": "sky-web",
+  "main": "index.js",
+  "homepage": "https://github.com/piotrjaw/sky-web",
+  "authors": [
+    "Piotr Jaworski <piotr.m.jaworski@gmail.com>"
+  ],
+  "description": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-animate": "^1.5.5",
+    "angular-aria": "^1.5.5",
+    "angular-messages": "^1.5.5",
+    "angular-material": "^1.0.8",
+    "angular-cookies": "^1.5.5",
+    "angular-ui-router": "^0.3.0",
+    "lodash": "^4.12.0"
+  }
+}

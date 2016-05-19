@@ -1,0 +1,11 @@
+<h3>Basket</h3>
+<div ng-repeat="channel in basket.filteredCatalogue">
+  <div ng-if="channel.selected">
+    {{channel.name}}
+  </div>
+</div>
+<md-button class="md-raised md-primary"
+           ng-disabled="basket.filteredCatalogue.length === 0"
+           ng-click="basket.checkout(basket.filteredCatalogue, basket.customerId)">
+  Checkout
+</md-button>

@@ -1,0 +1,44 @@
+<div layout="row" class="container">
+  <div flex show-gt-sm></div>
+  <md-whiteframe flex class="md-whiteframe-6dp" flex-sm="100" flex-md="80" layout="column" layout-padding layout-margin ng-if="!productSelection.message">
+    <md-whiteframe class="md-whiteframe-2dp" layout-margin>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </md-whiteframe>
+    <div layout="row" layout-align="space-between center" layout-margin>
+      <md-whiteframe flex="30" class="md-whiteframe-2dp" layout="column" layout-padding>
+        <h3>Sports</h3>
+        <div ng-repeat="channel in productSelection.catalogue">
+          <md-checkbox ng-if="!channel.global" ng-model="channel.selected">
+            {{channel.name}}
+          </md-checkbox>
+        </div>
+      </md-whiteframe>
+      <md-whiteframe flex="30" class="md-whiteframe-2dp" layout-padding>
+        <h3>News</h3>
+        <div ng-repeat="channel in productSelection.catalogue">
+          <md-checkbox ng-if="channel.global" ng-model="channel.selected">
+            {{channel.name}}
+          </md-checkbox>
+        </div>
+      </md-whiteframe>
+      <md-whiteframe flex="30" class="md-whiteframe-2dp" layout-padding>
+        <sky-basket catalogue="productSelection.catalogue" customer-id="productSelection.customerId"></sky-basket>
+      </md-whiteframe>
+    </div>
+    <md-whiteframe class="md-whiteframe-2dp" layout-margin>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </md-whiteframe>
+  </md-whiteframe>
+  <md-whiteframe flex class="md-whiteframe-6dp" flex-sm="100" flex-md="80" layout="column" layout-padding layout-margin ng-if="productSelection.message">
+    Error: {{productSelection.message}}
+  </md-whiteframe>
+  <div flex show-gt-sm></div>
+</div>
